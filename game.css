@@ -1,0 +1,132 @@
+@import url(../assets/fonts/inter.css);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --base-size: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: InterVariable, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    background: #fff;
+    color: black;
+    min-height: 100vh;
+    position: relative;
+}
+
+.content {
+    width: 90%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5em 0 1em;
+}
+
+.board {
+    position: absolute;
+    top: 90px;
+    user-select: none;
+
+    --square-size: calc(var(--base-size) * 2);
+
+    border: 2px solid #965b50;
+    width: calc(var(--base-size) * 20);
+    height: calc(var(--base-size) * 10);
+}
+
+.slots {
+    position: relative;
+    height: calc(var(--base-size) * 3.2);
+}
+
+.slot {
+    font-size: var(--base-size);
+    line-height: var(--square-size);
+    width: var(--square-size);
+    height: var(--square-size);
+    border: 1px dashed #999;
+    display: inline-block;
+    margin: calc(var(--base-size) * 0.5);
+}
+
+.slot.hover {
+    background: #f1f190;
+    border-style: solid;
+}
+
+.tiles {
+    height: calc(var(--base-size) * 6.75);
+    /*border: 1px dotted #aaa;*/
+}
+
+.tiles .tile {
+    font-size: var(--base-size);
+    line-height: var(--square-size);
+    width: var(--square-size);
+    height: var(--square-size);
+    text-align: center;
+    border: 1px solid #222;
+    position: absolute;
+    background: white;
+    transition: background-color 0.25s;
+    user-select: none;
+}
+
+.tiles .tile:hover {
+    background: #ffff9c;
+    border-color: #000;
+    cursor: grab;
+}
+
+.tiles .tile:active {
+    background: #ffff9c;
+    border-color: #000;
+    cursor: grabbing;
+}
+
+.tiles .tile:nth-child(1) {
+    top: 90px;
+    left: 160px;
+    transform: rotate(13deg);
+}
+
+.tiles .tile:nth-child(2) {
+    top: 182px;
+    left: 120px;
+    transform: rotate(-3deg);
+}
+
+.tiles .tile:nth-child(3) {
+    top: 102px;
+    left: 16px;
+    transform: rotate(8deg);
+}
+
+.tiles .tile:nth-child(4) {
+    top: 128px;
+    left: 320px;
+    transform: rotate(-10deg);
+}
+
+.tiles .tile:nth-child(5) {
+    top: 136px;
+    left: 400px;
+    transform: rotate(6deg);
+}
+
+.tiles .tile:nth-child(6) {
+    top: 176px;
+    left: 212px;
+    transform: rotate(23deg);
+}
