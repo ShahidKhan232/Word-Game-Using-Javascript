@@ -20,3 +20,4 @@ This is an interactive word puzzle game where players arrange tiles to form vali
 -Drag tiles into the empty slots to form a word.
 -Alternatively, click tiles or use the A-F keys to place tiles into the slots.
 -If the word is correct, a success message appears. If incorrect, adjust your tiles until the word is valid.
+
