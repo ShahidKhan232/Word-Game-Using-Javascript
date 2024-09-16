@@ -2,6 +2,10 @@
 
 This is an interactive word puzzle game where players arrange tiles to form valid words. The goal is to drag and drop letter tiles into designated slots to match a word from a predefined solution list. The game offers feedback when the player forms a correct or incorrect word, enhancing engagement.
 
+**Demo**
+
+-You can see a live demo of the project [here](https://www.linkedin.com/posts/shahid-khan-985919317_javascript-wordgame-codingskills-activity-7240313776736976897-6-XM?utm_source=share&utm_medium=member_desktop).
+
 **Features**
 
 -Interactive Drag-and-Drop Interface: Players can drag letter tiles into slots or click them to position them into place.
